@@ -71,3 +71,44 @@
     }
 }
 /* ESTILOS DE TARJETA */
+
+/* INICIO ESTILOS DE PAGO POR PARTE DE PAGO */
+.img-carpay {
+    width: 500px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+    .img-carpay {
+        width: 250px;
+    }
+}
+
+/* FIN ESTILOS DE PAGO POR PARTE DE PAGO */
+
+/* INICIO ESTILOS DE HERO SECTION */
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* FINAL ESTILOS DE HERO SECTION */
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    > a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    
+}

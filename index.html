@@ -12,9 +12,45 @@
 </head>
 
 <body>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Nombre del sitio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- OPCIONES DE NAVEGACIÓN -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+        <!-- OPCIONES DE NAVEGACIÓN -->
+      </div>
+    </nav>
+  </header>
 
-  <section class="container">
-    <div class="container" id="featured-3">
+  <!-- HERO SECTION -->
+  <section class="hero mt-5" style="background-image: url(assets/images/santafe.webp);">
+    <div class="container">
+      <div class="text-white text-center">
+        <h2>Texto de prueba</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus suscipit debitis nulla necessitatibus officia esse perspiciatis fugit voluptatem consequatur. Iste temporibus accusamus adipisci ad magni!</p>
+      </div>
+    </div>
+  </section>
+  <!-- HERO SECTION -->
+
+
+
+
+
+    <section class="container" id="featured-3">
       <div class="title-section mt-5 text-center" title-section my-5">
         <h2>Fácil, Rápido y Seguro</h2>
         <p class="w-75 mx-auto">Descripción para la sección en donde tendrá que hablar sobre algunas ventajas al comprar o adquirir servicios con la empresa y/o vendedor/a</p>
@@ -37,9 +73,43 @@
             </svg>
           </a>
         </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#collection"></use>
+            </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+            probably just keep going until we run out of words.</p>
+          <a href="#" class="icon-link">
+            Call to action
+            <svg class="bi">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#collection"></use>
+            </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+            probably just keep going until we run out of words.</p>
+          <a href="#" class="icon-link">
+            Call to action
+            <svg class="bi">
+              <use xlink:href="#chevron-right"></use>
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  
 
 
   <!-- AUTO X PAGO -->
@@ -64,7 +134,7 @@
         <!-- END Left Section -->
         <!-- START IMAGE -->
         <div class="col-sm-12 col-md-8 my-3">
-          <img class="img-fluid" src="assets/images/car-pay.png" alt="">
+          <img class="img-fluid img-carpay" src="assets/images/car-pay.png" alt="">
         </div>
         <!-- END IMAGE -->
         <!-- START Right Section -->
@@ -84,7 +154,7 @@
   </section>
 <!-- AUTO X PAGO -->
 
-
+<!-- MAP AND ROUTE -->
 <section>
   <div class="container py-5">
     <div class="row">
@@ -107,6 +177,38 @@
     </div>
   </div>
 </section>
+<!-- MAP AND ROUTE -->
+
+<!-- FOOTER PAGE -->
+<footer class="bg-dark text-white">
+<div class="container">
+  <div class="row d-flex justify-content-center">
+
+    <div class="col-sm-12 col-md-4">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <p>LOGO</p>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+<!-- FOOTER PAGE -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
