@@ -1,0 +1,14 @@
+/* INICIO ESTILOS DE HERO SECTION */
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* FINAL ESTILOS DE HERO SECTION */

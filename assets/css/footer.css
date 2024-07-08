@@ -1,0 +1,13 @@
+/* INICIO ESTILOS DE FOOTER */
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    > a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    
+}
+
+/* FINAL ESTILOS DE FOOTER */

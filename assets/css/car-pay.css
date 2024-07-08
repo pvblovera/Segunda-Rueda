@@ -1,0 +1,14 @@
+/* INICIO ESTILOS DE PAGO POR PARTE DE PAGO */
+
+.img-carpay {
+    width: 500px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+    .img-carpay {
+        width: 250px;
+    }
+}
+
+/* FIN ESTILOS DE PAGO POR PARTE DE PAGO */
