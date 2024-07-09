@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta con Fondo Gradiente</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-body {
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" style="width: 18rem;">
+        <img id="cardImage" src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Descripción de la tarjeta.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cardImage = document.getElementById('cardImage');
+            const cardBody = document.querySelector('.card-body');
+
+            cardImage.addEventListener('load', function() {
+                console.log("Image loaded");
+                const colorThief = new ColorThief();
+                const dominantColor = colorThief.getColor(cardImage);
+                console.log("Dominant color:", dominantColor);
+                cardBody.style.background = `linear-gradient(to bottom, rgba(${dominantColor[0]}, ${dominantColor[1]}, ${dominantColor[2]}, 0.8), rgba(255, 255, 255, 0.8))`;
+            });
+
+            if (cardImage.complete) {
+                // For cached images
+                cardImage.dispatchEvent(new Event('load'));
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,3 +1,13 @@
+.fs-7 {
+    font-size: .8rem;
+
+}
+
+.card {
+    max-height: 500px;
+}
+
+/* ESTILOS DE TARJETA HORIZONTAL */
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
@@ -28,3 +38,4 @@
 .card-horizontal:hover .card-title::after {
     width: 100%;
 }
+/* ESTILOS DE TARJETA HORIZONTAL */
